@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ann-pod 
+  labels:
+    env: prod
+  namespace: prod  
+  annotations:
+    myownzomato: "167004608601.dkr.ecr.eu-north-1.amazonaws.com/nodejsprodimage" 
+    sonarurl: "https://sonar.io/project-key: enable" 
+spec:
+  containers:
+    - name: ann-co
+      image: jenkins/jenkins
+      
+
